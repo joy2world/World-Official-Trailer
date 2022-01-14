@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from localhost/worldofficialtrailer/player-embed/id/121/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jan 2022 05:36:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+
+        
+        <title>Android App</title>    
+        <link rel="canonical" href="../../../watch/android-app/index.html" />
+    
+	<link rel="stylesheet" href="../../../wp-content/plugins/all-in-one-video-gallery/vendor/videojs/video-js.min5fb2.css?v=7.11.8" />
+
+	
+	
+	<style type="text/css">
+        html, 
+        body,
+		.video-js {
+            width: 100%;
+            height: 100%;
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden;
+        }
+
+		.vjs-no-control-bar .vjs-control-bar {
+			display: none;
+		}
+
+		.video-js .vjs-current-time,
+		.vjs-no-flex .vjs-current-time,
+		.video-js .vjs-duration,
+		.vjs-no-flex .vjs-duration {
+			display: block;
+		}
+
+		.video-js .vjs-subtitles-button .vjs-icon-placeholder:before {
+			content: "\f10d";
+		}
+
+		.video-js .vjs-menu li.vjs-selected:focus,
+		.video-js .vjs-menu li.vjs-selected:hover {
+			background-color: #fff;
+			color: #2b333f;
+		}
+
+		.video-js .vjs-big-play-button {
+			width: 1.5em;
+			height: 1.5em;
+			top: 50%;
+			left: 50%;
+			margin-top: 0;
+			margin-left: 0;
+			background-color: rgba( 0, 0, 0, 0.6 );
+			border: none;
+			border-radius: 50%;
+			font-size: 6em;
+			line-height: 1.5em;			
+			transform: translateX( -50% ) translateY( -50% );
+		}
+
+		.video-js:hover .vjs-big-play-button,
+		.video-js .vjs-big-play-button:focus {
+			background-color: rgba( 0, 0, 0, 0.7 );
+		}
+
+		.vjs-waiting .vjs-big-play-button {
+			display: none !important;
+		}	
+
+		.vjs-ended .vjs-control-bar,
+		.vjs-ended .vjs-text-track-display,
+		.vjs-ended .vjs-logo {
+			display: none;
+		}
+
+		.vjs-ended .vjs-poster,
+		.vjs-ended .vjs-big-play-button {
+			display: block;
+		}
+
+		.vjs-logo {
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		.vjs-has-started .vjs-logo {
+			opacity: 0.5;
+			transition: opacity 0.1s;
+		}
+
+		.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-logo {
+			opacity: 0;
+			transition: opacity 1s;
+		}
+
+		.vjs-has-started .vjs-logo:hover {
+			opacity: 1;
+		}
+
+		.vjs-logo img {
+			max-width: 100%;
+		}
+
+		.contextmenu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            background-color: #2B333F;
+  			background-color: rgba( 43, 51, 63, 0.7 );
+			border-radius: 2px;
+            z-index: 9999999999; /* make sure it shows on fullscreen */
+        }
+        
+        .contextmenu-item {
+            margin: 0;
+            padding: 8px 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: #FFF;		
+            white-space: nowrap;
+            cursor: pointer;
+        }
+    </style>
+
+	</head>
+<body id="body">
+    <video-js id="player" style="width: 100%; height: 100%;" controls playsinline preload="metadata" loop="1" poster="../../../../../i.gadgets360cdn.com/large/google_play_1559395346287d41d.jpg?">
+               
+	</video-js>
+
+	    
+	<script src="../../../wp-content/plugins/all-in-one-video-gallery/vendor/videojs/video.min5fb2.js?v=7.11.8" type="text/javascript"></script>
+
+	
+	
+	
+	
+	
+	
+	
+			<script src="../../../wp-content/plugins/all-in-one-video-gallery/vendor/videojs-plugins/can-autoplay/can-autoplay.min2513.js?v=3.0.0" type="text/javascript"></script>
+    
+	
+    <script type="text/javascript">
+		'use strict';			
+			
+		// Vars
+		var settings = {"controlBar":{"children":["PlayToggle","fullscreenToggle"]},"autoplay":1,"muted":1,"playbackRates":[0.5,1,1.5,2],"aiovg":{"postID":121,"postType":"aiovg_videos","showLogo":0,"contextmenuLabel":""}};
+
+		settings.html5 = {
+			hls: {
+      			overrideNative: !videojs.browser.IS_ANY_SAFARI,
+    		}
+		};
+
+		/**
+		 * Merge attributes.
+		 *
+		 * @since  2.0.0
+		 * @param  {array}  attributes Attributes array.
+		 * @return {string} str        Merged attributes string to use in an HTML element.
+		 */
+		function combineAttributes( attributes ) {
+			var str = '';
+
+			for ( var key in attributes ) {
+				str += ( key + '="' + attributes[ key ] + '" ' );
+			}
+
+			return str;
+		}
+
+		/**
+		 * Update video views count.
+		 *
+		 * @since 2.0.0
+		 */
+		function updateViewsCount() {
+			var xmlhttp;
+
+			if ( window.XMLHttpRequest ) {
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				xmlhttp = new ActiveXObject( 'Microsoft.XMLHTTP' );
+			};
+			
+			xmlhttp.onreadystatechange = function() {				
+				if ( 4 == xmlhttp.readyState && 200 == xmlhttp.status ) {					
+					if ( xmlhttp.responseText ) {
+						// Do nothing
+					}						
+				}					
+			};	
+
+			xmlhttp.open( 'GET.html', '../../../wp-admin/admin-ajax59a2.json?action=aiovg_update_views_count&amp;post_id=121&amp;security=64a39214e2', true );
+			xmlhttp.send();							
+		}
+
+		/**
+		 * Check unmuted autoplay support.
+		 *
+		 * @since 2.0.0
+		 */
+		function checkUnmutedAutoplaySupport() {
+			canAutoplay
+				.video({ timeout: 100, muted: false })
+				.then(function( response ) {
+					if ( response.result === false ) {
+						// Unmuted autoplay is not allowed
+						checkMutedAutoplaySupport();
+					} else {
+						// Unmuted autoplay is allowed
+						settings.autoplay = true;
+						initPlayer();
+					}
+				});
+		}
+
+		/**
+		 * Check muted autoplay support.
+		 *
+		 * @since 2.0.0
+		 */
+		function checkMutedAutoplaySupport() {
+			canAutoplay
+				.video({ timeout: 100, muted: true })
+				.then(function( response ) {
+					if ( response.result === false ) {
+						// Muted autoplay is not allowed
+						settings.autoplay = false;
+					} else {
+						// Muted autoplay is allowed
+						settings.autoplay = true;
+						settings.muted = true;
+					}
+					initPlayer();
+				});
+		}
+
+		/**
+		 * Initialize the player.
+		 *
+		 * @since 2.0.0
+		 */		
+		function initPlayer() {
+			var player = videojs( 'player', settings );			
+
+			// Maintained for backward compatibility
+			if ( typeof window['onPlayerInitialized'] === 'function' ) {
+				window.onPlayerInitialized( player );
+			}
+
+			// Dispatch an event
+			var evt = document.createEvent( 'CustomEvent' );
+			evt.initCustomEvent( 'player.init', false, false, { player: player } );
+			window.dispatchEvent( evt );
+
+			// Fired the first time a video is played
+			player.one( 'play', function() {
+				if ( 'aiovg_videos' == settings.aiovg.postType ) {
+					updateViewsCount();
+				}
+			});
+
+			// Offset
+			var offset = {};
+
+			if ( settings.aiovg.start ) {
+				offset.start = settings.aiovg.start;
+			}
+
+			if ( settings.aiovg.end ) {
+				offset.end = settings.aiovg.end;
+			}
+			
+			if ( Object.keys( offset ).length > 1 ) {
+				offset.restart_beginning = false;
+				player.offset( offset );
+			}
+
+			// Logo overlay
+			if ( settings.aiovg.showLogo ) {
+				var attributes = [];
+				attributes['src'] = settings.aiovg.logoImage;
+
+				if ( settings.aiovg.logoMargin ) {
+					settings.aiovg.logoMargin = settings.aiovg.logoMargin - 5;
+				}
+
+				var align;
+				switch ( settings.aiovg.logoPosition ) {
+					case 'topleft':
+						align = 'top-left';
+						attributes['style'] = 'margin: ' + settings.aiovg.logoMargin + 'px;';
+						break;
+					case 'topright':
+						align = 'top-right';
+						attributes['style'] = 'margin: ' + settings.aiovg.logoMargin + 'px;';
+						break;					
+					case 'bottomright':
+						align = 'bottom-right';
+						attributes['style'] = 'margin: ' + settings.aiovg.logoMargin + 'px;';
+						break;
+					default:						
+						align = 'bottom-left';
+						attributes['style'] = 'margin: ' + settings.aiovg.logoMargin + 'px;';
+						break;					
+				}
+
+				if ( settings.aiovg.logoLink ) {
+					attributes['onclick'] = "top.window.location.href='" + settings.aiovg.logoLink + "';";
+				}
+
+				player.overlay({
+					content: '<img ' +  combineAttributes( attributes ) + '/>',
+					class: 'vjs-logo',
+					align: align,
+					showBackground: false					
+				});
+			}
+		}
+
+		if ( settings.autoplay ) {
+			checkUnmutedAutoplaySupport();
+		} else {
+			initPlayer();
+		}					
+
+		// Custom contextmenu
+		if ( settings.aiovg.contextmenuLabel ) {
+			var contextmenu = document.getElementById( 'contextmenu' );
+			var timeout_handler = '';
+			
+			document.addEventListener( 'contextmenu', function( e ) {						
+				if ( 3 === e.keyCode || 3 === e.which ) {
+					e.preventDefault();
+					e.stopPropagation();
+					
+					var width = contextmenu.offsetWidth,
+						height = contextmenu.offsetHeight,
+						x = e.pageX,
+						y = e.pageY,
+						doc = document.documentElement,
+						scrollLeft = ( window.pageXOffset || doc.scrollLeft ) - ( doc.clientLeft || 0 ),
+						scrollTop = ( window.pageYOffset || doc.scrollTop ) - ( doc.clientTop || 0 ),
+						left = x + width > window.innerWidth + scrollLeft ? x - width : x,
+						top = y + height > window.innerHeight + scrollTop ? y - height : y;
+			
+					contextmenu.style.display = '';
+					contextmenu.style.left = left + 'px';
+					contextmenu.style.top = top + 'px';
+					
+					clearTimeout( timeout_handler );
+					timeout_handler = setTimeout(function() {
+						contextmenu.style.display = 'none';
+					}, 1500 );				
+				}														 
+			});
+			
+			if ( settings.aiovg.logoLink ) {
+				contextmenu.addEventListener( 'click', function() {
+					top.window.location.href = settings.aiovg.logoLink;
+				});
+			}
+			
+			document.addEventListener( 'click', function() {
+				contextmenu.style.display = 'none';								 
+			});	
+		}
+    </script>	
+</body>
+
+<!-- Mirrored from localhost/worldofficialtrailer/player-embed/id/121/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jan 2022 05:36:38 GMT -->
+</html>
